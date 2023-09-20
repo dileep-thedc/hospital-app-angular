@@ -1,0 +1,33 @@
+/* Styling for the details container */
+.details-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for details labels */
+  .details-label {
+    font-weight: bold;
+  }
+  
+  /* Styling for details values */
+  .details-value {
+    margin-bottom: 15px;
+  }
+  
+  /* Styling for actions */
+  .actions {
+    margin-top: 20px;
+  }
+  
+  /* Styling for back link */
+  .actions a {
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,13 @@
+<div class="doctors-list">
+    <h2>Doctors List</h2>
+    <ul>
+      <li *ngFor="let doctor of doctors">
+        <a routerLink="/doctors/{{doctor.id}}">{{ doctor.name }}</a>
+        <span class="actions">
+          <a routerLink="/update-doctor/{{doctor.id}}">Update</a>
+          <a (click)="deleteDoctor(doctor.id)" style="color: red; cursor: pointer;">Delete</a>
+        </span>
+      </li>
+    </ul>
+  </div>
+  

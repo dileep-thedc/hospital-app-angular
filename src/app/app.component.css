@@ -1,0 +1,42 @@
+/* Style for the header */
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  /* Style for the navigation */
+  .nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s;
+  }
+  
+  .nav a:hover {
+    color: #e0e0e0;
+  }
+  
+  /* Style for the active link */
+  .nav a.active {
+    color: #f0f0f0;
+  }
+  
+  /* Style for the main content */
+  .main {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  

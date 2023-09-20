@@ -1,0 +1,17 @@
+<div class="appointment-slot-create">
+  <h2>Create Appointment Slot</h2>
+  <form (submit)="createAppointmentSlot()" class="form">
+    <label for="startTime">Start Time:</label>
+    <input type="datetime-local" id="startTime" [(ngModel)]="startTime" name="startTime" required>
+
+    <label for="endTime">End Time:</label>
+    <input type="datetime-local" id="endTime" [(ngModel)]="endTime" name="endTime" required>
+
+    <label for="doctor">Doctor:</label>
+    <select id="doctor" [(ngModel)]="selectedDoctor" name="doctor" required>
+      <option *ngFor="let doctor of doctors" [ngValue]="doctor">{{ doctor.name }}</option>
+    </select>
+
+    <button type="submit">Create Appointment Slot</button>
+  </form>
+</div>

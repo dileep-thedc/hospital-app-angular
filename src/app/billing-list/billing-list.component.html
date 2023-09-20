@@ -1,0 +1,14 @@
+<div class="billing-list">
+  <h2>Billing Records List</h2>
+  <ul>
+    <li *ngFor="let billing of billings">
+      <a routerLink="/billings/{{ billing.id }}">{{ billing.patient.name }}</a>
+      <span class="actions">
+        <a routerLink="/billings/{{ billing.id }}/update">Update</a>
+
+
+        <a (click)="deleteBilling(billing.id)" style="color: red; cursor: pointer;">Delete</a>
+      </span>
+    </li>
+  </ul>
+</div>

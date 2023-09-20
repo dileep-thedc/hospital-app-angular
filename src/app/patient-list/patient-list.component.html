@@ -1,0 +1,18 @@
+<div class="background-image">
+  <!-- Your entire application content goes here -->
+
+  <div class="patients-list">
+    <h2>Patients List</h2>
+    <ul>
+      <li *ngFor="let patient of patients">
+        <a routerLink="/patients/{{patient.id}}">{{ patient.name }}</a>
+        <span class="actions">
+          <a routerLink="/update/{{patient.id}}">Update</a>
+          <a (click)="deletePatient(patient.id)" style="color: red; cursor: pointer;">Delete</a>
+        </span>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- Any other components or content you have -->
+</div>

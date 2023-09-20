@@ -1,0 +1,13 @@
+<div class="insurance-list">
+    <h2>Insurance List</h2>
+    <ul>
+      <li *ngFor="let insurance of insurances">
+        <a routerLink="/insurances/{{ insurance.id }}">{{ insurance.patient.name }}</a>
+        <span class="actions">
+          <a routerLink="/update-insurance/{{ insurance.id }}">Update</a>
+          <a (click)="deleteInsurance(insurance.id)" style="color: red; cursor: pointer;">Delete</a>
+        </span>
+      </li>
+    </ul>
+  </div>
+  

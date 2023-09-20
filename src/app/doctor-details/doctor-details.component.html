@@ -1,0 +1,9 @@
+<h2>Doctor Details</h2>
+<div *ngIf="doctor">
+  <p>ID: {{ doctor.id }}</p>
+  <p>Name: {{ doctor.name }}</p>
+  <p>Specialization: {{ doctor.specialization }}</p>
+  <p>Contact Information: {{ doctor.contactInformation }}</p>
+  
+</div>
+<button (click)="goBack()">Go Back</button>

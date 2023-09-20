@@ -1,0 +1,8 @@
+<h2>Patient Details</h2>
+<div *ngIf="patient">
+  <p>Name: {{ patient.name }}</p>
+  <p>Gender: {{ patient.gender }}</p>
+  <p>Birthdate: {{ patient.birthdate }}</p>
+  <p>Contact Details: {{ patient.contactDetails }}</p>
+</div>
+<button (click)="goBack()">Go Back</button>

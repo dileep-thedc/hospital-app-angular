@@ -1,0 +1,39 @@
+/* billing-list.component.css */
+
+.billing-list {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for list items */
+  .billing-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .billing-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* Styling for actions */
+  .billing-list .actions a {
+    margin-left: 10px;
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Styling for delete link */
+  .billing-list .actions a.delete-link {
+    color: red;
+  }
+  

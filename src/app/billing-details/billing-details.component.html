@@ -1,0 +1,14 @@
+<div *ngIf="billing" class="billing-detail">
+    <h2>Billing Record Details</h2>
+    <p><strong>Patient ID:</strong> {{ billing.patient.id }}</p>
+    <p><strong>Patient Name:</strong> {{ billing.patient.name }}</p>
+  
+    
+    <p><strong>Cost:</strong> {{ billing.cost }}</p>
+    <p>Billing Date and Time: {{ billing.billingDateTime }}</p>
+    
+    
+  
+  <button (click)="goBack()">Go Back</button>
+  </div>
+  

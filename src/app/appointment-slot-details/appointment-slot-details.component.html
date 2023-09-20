@@ -1,0 +1,10 @@
+<div *ngIf="appointmentSlot">
+    <h2>Appointment Slot Details</h2>
+    <p>Doctor: {{ appointmentSlot.doctor.name }}</p>
+    <p>Doctor Specialization: {{ appointmentSlot.doctor.specialization }}</p>
+    <p>Start Time: {{ appointmentSlot.startTime }}</p>
+    <p>End Time: {{ appointmentSlot.endTime }}</p>
+    <button (click)="goBack()">Back</button>
+    
+  </div>
+  

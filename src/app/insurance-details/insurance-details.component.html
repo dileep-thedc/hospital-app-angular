@@ -1,0 +1,14 @@
+<div *ngIf="insurance" class="insurance-details">
+    <h2>Insurance Details</h2>
+    <dl>
+      <dt>Associated Patient:</dt>
+      <dd>{{ insurance.patient.name }}</dd>
+      <dt>Policy Number:</dt>
+      <dd>{{ insurance.policyNumber }}</dd>
+      <dt>Coverage Amount:</dt>
+      <dd>{{ insurance.coverageAmount }}</dd>
+      <button (click)="goBack()">Back</button>
+      
+    </dl>
+  </div>
+  

@@ -1,0 +1,21 @@
+<div class="container">
+  <h2>Create Billing Record</h2>
+  <form (ngSubmit)="createBilling()" #billingForm="ngForm">
+    <div class="form-group">
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" name="amount" [(ngModel)]="amount" required>
+    </div>
+    <div class="form-group">
+      <label for="billingDateTime">Billing Date and Time</label>
+      <input type="datetime-local" id="billingDateTime" name="billingDateTime" [(ngModel)]="billingDateTime" required>
+    </div>
+    <div class="form-group">
+      <label for="patient">Patient:</label>
+      <select id="patient" name="patient" [(ngModel)]="selectedPatient" required>
+        <option value="" disabled>Select a patient</option>
+        <option *ngFor="let patient of patients" [ngValue]="patient">{{ patient.name }}</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Create Billing</button>
+  </form>
+</div>

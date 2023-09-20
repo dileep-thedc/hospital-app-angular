@@ -1,0 +1,12 @@
+<div class="appointments-list">
+  <h2>Appointments List</h2>
+<ul>
+  <li *ngFor="let slot of appointmentSlots">
+    <a [routerLink]="['/appointment-slots', slot.id]">
+      {{ slot.startTime }} - {{ slot.endTime }}
+    </a>
+    
+    <button (click)="deleteAppointment(slot.id)">Delete</button>
+  </li>
+</ul>
+</div>

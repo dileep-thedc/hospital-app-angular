@@ -1,0 +1,20 @@
+<div class="update-doctor">
+    <h2>Update Doctor</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" [(ngModel)]="doctor.name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="specialization">Specialization:</label>
+        <input type="text" id="specialization" [(ngModel)]="doctor.specialization" name="specialization" required>
+      </div>
+      <div class="form-group">
+        <label for="contactInformation">Contact Information:</label>
+        <input type="text" id="contactInformation" [(ngModel)]="doctor.contactInformation" name="contactInformation" required>
+      </div>
+      <!-- Add more form fields as needed -->
+      <button type="submit">Update Doctor</button>
+    </form>
+  </div>
+  

@@ -1,0 +1,18 @@
+<div *ngIf="billing" class="billing-update">
+  <h2>Update Billing Record</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="cost">Cost</label>
+      <input type="number" id="cost" name="cost" [(ngModel)]="billing.cost" required>
+    </div>
+
+    <div class="form-group">
+      <label for="billingDateTime">Billing Date and Time</label>
+      <input type="datetime-local" id="billingDateTime" name="billingDateTime" [(ngModel)]="billing.billingDateTime" required>
+    </div>
+
+    <!-- Add more form fields for other Billing properties as needed -->
+
+    <button type="submit" class="btn btn-primary">Update Billing Record</button>
+  </form>
+</div>

@@ -1,0 +1,62 @@
+/* Style for the patients list container */
+.patients-list {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the list heading */
+  .patients-list h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  /* Style for the list */
+  .patients-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Style for list items */
+  .patients-list li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Style for links */
+  .patients-list a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.2s;
+  }
+  
+  .patients-list a:hover {
+    color: #0056b3;
+  }
+  
+  /* Style for the "Update" and "Delete" links */
+  .patients-list .actions a {
+    margin-left: 10px;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.2s;
+  }
+  
+  .patients-list .actions a:hover {
+    color: red;
+  }
+  .background-image {
+    position: relative;
+    z-index: 1; /* Place components above the background image */
+    /* Add any other styling as needed */
+  }
+  

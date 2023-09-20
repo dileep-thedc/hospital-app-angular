@@ -1,0 +1,13 @@
+<div class="appointments-list">
+    <h2>Appointments List</h2>
+    <ul>
+      <li *ngFor="let appointment of appointments">
+        <a routerLink="/appointments/{{ appointment.id }}">{{ appointment.appointmentDateTime }}</a>
+        <span class="actions">
+          <a routerLink="/update-appointment/{{ appointment.id }}">Update</a>
+          <a (click)="deleteAppointment(appointment.id)" style="color: red; cursor: pointer;">Delete</a>
+        </span>
+      </li>
+    </ul>
+  </div>
+  

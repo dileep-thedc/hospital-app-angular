@@ -1,0 +1,22 @@
+<h2>Create Appointment</h2>
+<form (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="appointmentDateTime">Appointment Date and Time</label>
+    <input type="datetime-local" id="appointmentDateTime" name="appointmentDateTime" [(ngModel)]="appointmentDateTime" required>
+  </div>
+  <div class="form-group">
+    <label for="patientId">Select Patient</label>
+    <select id="patientId" name="patientId" [(ngModel)]="patientId" required>
+      <option value="" disabled>Select a patient</option>
+      <option *ngFor="let patient of patients" [value]="patient.id">{{ patient.id }}</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="doctorId">Select Doctor</label>
+    <select id="doctorId" name="doctorId" [(ngModel)]="doctorId" required>
+      <option value="" disabled>Select a doctor by id</option>
+      <option *ngFor="let doctor of doctors" [value]="doctor.id">{{ doctor.id }}</option>
+    </select>
+  </div>
+  <button type="submit">Create Appointment</button>
+</form>

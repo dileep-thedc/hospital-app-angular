@@ -1,0 +1,62 @@
+/* appointment-slot-create.component.css */
+
+.appointment-slot-create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .appointment-slot-create h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .form {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form input,
+  .form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style error messages */
+  .error {
+    color: red;
+    font-size: 14px;
+  }
+  
+  /* Style success message */
+  .success {
+    color: green;
+    font-size: 14px;
+  }
+  

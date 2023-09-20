@@ -1,0 +1,13 @@
+<div class="medical-records-list">
+    <h2>Medical Records List</h2>
+    <ul>
+      <li *ngFor="let medicalRecord of medicalRecords">
+        <a routerLink="/medical-records/{{ medicalRecord.id }}">{{ medicalRecord.patient.name }}</a>
+        <span class="actions">
+          <a routerLink="/update-medical-record/{{ medicalRecord.id }}">Update</a>
+          <a (click)="deleteMedicalRecord(medicalRecord.id)" style="color: red; cursor: pointer;">Delete</a>
+        </span>
+      </li>
+    </ul>
+  </div>
+  

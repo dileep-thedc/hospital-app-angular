@@ -1,0 +1,10 @@
+<div *ngIf="medicalRecord" class="medical-record-details">
+    <h2>Medical Record Details</h2>
+    <p><strong>Patient:</strong> {{ medicalRecord.patient.name }}</p>
+    <p><strong>Diagnosis:</strong> {{ medicalRecord.diagnosis }}</p>
+    <p><strong>Prescriptions:</strong> {{ medicalRecord.prescriptions }}</p>
+    <p><strong>Test Results:</strong> {{ medicalRecord.testResults }}</p>
+    
+    <button (click)="goBack()">Back</button>
+  </div>
+ 

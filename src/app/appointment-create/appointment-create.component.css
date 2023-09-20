@@ -1,0 +1,67 @@
+/* Styling for the form container */
+.form-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 10vh; /* Adjust the value to control vertical alignment */
+}
+
+
+/* Styling for form labels */
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Styling for form input fields */
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+    border-radius: 3px;
+  background-color: #f7f7f7;
+  font-size: 14px;
+}
+
+/* Styling for submit button */
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for disabled options */
+select[disabled] {
+  color: #999;
+}
+
+/* Styling for option elements */
+option {
+  padding: 3px;
+}
+
+/* Optional: Center the form on the page */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5;
+}

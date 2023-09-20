@@ -1,0 +1,17 @@
+<h2>Appointment Details</h2>
+<div *ngIf="appointment">
+  <p>Appointment Date and Time: {{ appointment.appointmentDateTime }}</p>
+  <div *ngIf="appointment.patient">
+    <h3>Patient Details</h3>
+    <p>Patient Name: {{ appointment.patient.name }}</p>
+    <p>Patient Gender: {{ appointment.patient.gender }}</p>
+    <!-- Display other patient details as needed -->
+  </div>
+  <div *ngIf="appointment.doctor">
+    <h3>Doctor Details</h3>
+    <p>Doctor Name: {{ appointment.doctor.name }}</p>
+    <p>Doctor Specialization: {{ appointment.doctor.specialization }}</p>
+    <!-- Display other doctor details as needed -->
+  </div>
+</div>
+<button (click)="goBack()">Go Back</button>
